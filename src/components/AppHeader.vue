@@ -44,13 +44,8 @@
 
 <!-- ----------------------------------------------------------------------------- -->
 
-<template>
-    <header class=" bg-dark text-light">
-
-        <div class="d-flex justify-content-around align-items-center">
-            <figure>
-                <img src="../assets/img/logo-restaurant-2x-600x115.png" alt="">
-            </figure>
+        <!-- <div class="d-flex justify-content-around align-items-center">
+            <img class="bg-primary" src="../assets/img/logo-restaurant-2x-600x115.png" width="300" alt="">
 
             
             <ul class="d-flex gap-5">
@@ -58,28 +53,54 @@
                     {{ element.nome }}
                 </li>
             </ul>
-        </div>
+        </div> -->
 
-        <main class="d-flex justify-content-between">
-            <div class="experience">
 
-                <p>the best table in town</p>
 
-                <div class="mx-auto">
+<template>
+    <header class="d-flex justify-content-between">
+
+        <div class="experienceHeader">
+
+            <div class="titleLogo">
+                <img class="bg-danger" src="../assets/img/logo-restaurant-2x-600x115.png" width="250" alt="">
+            </div>
+
+            
+            <!-- <div class="mx-auto text-light">
+
+                <div class="mt-5">
+
+                    <p>the best table in town</p>
+
+                </div>    
+
+                <div class="">
+
                     <h1>fine dining experience</h1>
 
                     <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
 
-                    <button>explore the menu</button>
+                    <button class="btn">explore the menu</button>
+
                 </div>
+            </div> -->
+        </div>
 
-            </div>
 
-            <figure>
-                <!-- <img src="../assets/img/slider52x.jpg" alt=""> -->
-            </figure>
+
+
+        <div class="imgHeader">
+                <ul class="titleLogo d-flex gap-5 p-4 mt-3 text-light">
+                    <li v-for="(element, index) in headerAvada" :key="index">
+                        {{ element.nome }}
+                    </li>
+                </ul>
+            <!-- <img src="../assets/img/slider52x.jpg" alt=""> -->
+        </div>
+
+
             
-        </main>
     </header>
 </template>
 
@@ -90,28 +111,28 @@
         list-style-type: none;
     }
 
-    main{
-        
-        .experience{
-            width: 40%;
-            background-color: red;
-
-            div{
-                background-color: orange;
-                width: 300px;
-            }
-
+    header{
+        .titleLogo{
+                width: 100%;
+                // background-color: blue;
+                padding: 20px;
         }
 
-        figure{
+        .experienceHeader{
+            width: 40%;
+            background-color: black;
+            height: 100vh;
+        }
+
+        .imgHeader{
             background-image: url('../assets/img/slider52x.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             width: 60%;
-            height: 75vh;
+            height: 100vh;
+            margin: 0;
         }
     }
-
 </style>
 
