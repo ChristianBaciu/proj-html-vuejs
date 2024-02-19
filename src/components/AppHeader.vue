@@ -9,7 +9,7 @@
                         // true
                     },
                     {
-                        nome: 'Culinary',
+                        nome: 'Culinary History',
                         // false
                     },
                     {
@@ -32,10 +32,10 @@
                         nome: 'Reservations',
                         // false
                     },
-                    // {
-                    //     nome: '<i class="fa-solid fa-cart-shopping"></i>'
-                    //     // false
-                    // }
+                    {
+                        // nome: '<i class="fa-solid fa-cart-shopping"></i>'
+                        // false
+                    }
                 ]
             }
         }
@@ -44,63 +44,44 @@
 
 <!-- ----------------------------------------------------------------------------- -->
 
-        <!-- <div class="d-flex justify-content-around align-items-center">
-            <img class="bg-primary" src="../assets/img/logo-restaurant-2x-600x115.png" width="300" alt="">
-
-            
-            <ul class="d-flex gap-5">
-                <li v-for="(element, index) in headerAvada" :key="index">
-                    {{ element.nome }}
-                </li>
-            </ul>
-        </div> -->
-
-
-
 <template>
     <header class="d-flex justify-content-between">
-
         <div class="experienceHeader">
-
             <div class="titleLogo">
-                <img class="bg-danger" src="../assets/img/logo-restaurant-2x-600x115.png" width="250" alt="">
+                <img class="ms-5" src="../assets/img/logo-restaurant-2x-600x115.png" width="250" alt="">
             </div>
 
-            
-            <!-- <div class="mx-auto text-light">
+            <div class="testo mx-auto text-light">
+                <div class="d-flex">
 
-                <div class="mt-5">
 
-                    <p>the best table in town</p>
+
+                    <span>----</span>
+                    <p class="text-uppercase">the best table in town</p>
+
+
 
                 </div>    
 
-                <div class="">
-
-                    <h1>fine dining experience</h1>
-
+                <div>
+                    <h1 class="text-uppercase">fine dining experience</h1>
+                    <br>
                     <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
-
-                    <button class="btn">explore the menu</button>
-
+                    <br>
+                    <button class="bottone text-uppercase text-light">explore the menu</button>
                 </div>
-            </div> -->
+            </div>
+            
         </div>
 
-
-
-
         <div class="imgHeader">
-                <ul class="titleLogo d-flex gap-5 p-4 mt-3 text-light">
+                <ul class="titleLogo d-flex gap-4 justify-content-center p-4 my-1 text-light">
                     <li v-for="(element, index) in headerAvada" :key="index">
                         {{ element.nome }}
                     </li>
                 </ul>
             <!-- <img src="../assets/img/slider52x.jpg" alt=""> -->
         </div>
-
-
-            
     </header>
 </template>
 
@@ -112,16 +93,24 @@
     }
 
     header{
-        .titleLogo{
-                width: 100%;
-                // background-color: blue;
-                padding: 20px;
-        }
 
         .experienceHeader{
-            width: 40%;
+            width: 47%;
             background-color: black;
-            height: 100vh;
+            height: 95vh;
+
+            .testo{
+                width: 350px;
+                padding: 20px;
+                margin-top: 100px;
+            }
+
+            .bottone{
+                border: 1px solid white;
+                background-color: transparent;
+                padding: 10px;
+                width: 55%;
+            }
         }
 
         .imgHeader{
@@ -129,9 +118,13 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: 60%;
-            height: 100vh;
+            width: 53%;
+            height: 95vh;
             margin: 0;
+        }
+
+        .titleLogo{
+                padding: 20px;
         }
     }
 </style>
