@@ -46,7 +46,7 @@
 
 <template>
     <header class="d-flex justify-content-between">
-        <div class="experienceHeader">
+        <div class="textExperience">
             <div class="titleLogo">
                 <img class="ms-5" src="../assets/img/logo-restaurant-2x-600x115.png" width="250" alt="">
             </div>
@@ -57,7 +57,7 @@
                     <h5>the best table in town</h5>
                 </div>    
 
-                <div class="testo">
+                <div class="info">
                     <h1>fine dining experience</h1>
                     <br>
                     <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
@@ -84,7 +84,7 @@
 <style lang="scss" scoped>
     header{
 
-        .experienceHeader{
+        .textExperience{
             background-color: black;
             width: 47%;
             height: 95vh;
@@ -93,7 +93,7 @@
                 width: 400px;
                 margin-top: 100px;
 
-                .testo{
+                .info{
                     padding-top: 35px;
                     margin-left: 10px;
                     padding-left: 47px;

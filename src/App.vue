@@ -1,11 +1,13 @@
 <script>
     import AppHeader from './components/AppHeader.vue'
-    import AppMain from './components/AppMain.vue'
+    import AppMain from './components/main/AppMain.vue'
+    import BestInTown from './components/main/BestInTown.vue'
 
     export default{
         components:{
             AppHeader,
-            AppMain
+            AppMain,
+            BestInTown
         }
     }
 </script>
@@ -14,7 +16,12 @@
 
 <template>
     <AppHeader/>
-    <AppMain/>
+
+    <main>
+        <AppMain/>
+        <BestInTown/>
+    </main>
+    
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->

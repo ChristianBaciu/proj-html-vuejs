@@ -7,7 +7,7 @@
                     {
                         titolo: 'the best table in town',
                         paragrafo: 'Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
-                        immag: 'sushi-1',
+                        // immag: '../assets/img/sushi-1.png',
                         bottone: 'explore the menu'
                     },
                 ],
@@ -15,7 +15,7 @@
                     {
                         titolo: 'perfect for groups',
                         paragrafo: 'Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nune. Orci elementum in aliquet a gravida vivamus aliquam turpis vitae.',
-                        immag: 'sushi-2',
+                        // immag: '../assets/img/sushi-1.png',
                         bottone: 'make a reservation'
                     },
                 ],
@@ -23,7 +23,7 @@
                     {
                         titolo: 'fresh produce everyday',
                         paragrafo: 'Hendrerit amet, volutpat leo non, commodo maecenas scelerisque tincidunt. Morbi vulputate morbi parus quisque sit sagittis orci alementum gravida.',
-                        immag: 'sushi-3',
+                        // immag: '../assets/img/sushi-1.png',
                         bottone: 'learn more about us'
                     },
                 ]
@@ -46,7 +46,7 @@
                     <br>
                     <p>Tristique tempus condimentum diam donee. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.</p>
                     <br>
-                    <img src="../assets/img/signature.jpg" width="130"  alt="">
+                    <img src="../../assets/img/signature.jpg" width="130"  alt="">
                 </div>
             </div>
             
@@ -55,7 +55,7 @@
         <div class="imgSushi">
 
             <figure>
-                <img src="../assets/img/info22x.jpg" alt="">
+                <img src="../../assets/img/info22x.jpg" alt="">
             </figure>
 
         </div>
@@ -64,10 +64,13 @@
     <main>
         <div class="informazione p-5 d-flex justify-content-center ">
             <div class="row text-center">
+                
                 <div class="col-4">
                     <div class="sezione">
 
-                        <img src="" alt="">
+                        <figure>
+                            <img src="../../assets/img/sushi-1.png" alt="">
+                        </figure>
 
                         <h4>{{ TheBestTableInTown[0].titolo }}</h4>
                         <p>{{ TheBestTableInTown[0].paragrafo }}</p>
@@ -78,7 +81,9 @@
                 <div class="col-4">
                     <div class="sezione">
 
-                        <img src="" alt="">
+                        <figure>
+                            <img src="../../assets/img/sushi-2.png" alt="">
+                        </figure>
 
                         <h4>{{ PerfectForGroups[0].titolo }}</h4>
                         <p>{{ PerfectForGroups[0].paragrafo }}</p>
@@ -89,13 +94,16 @@
                 <div class="col-4">
                     <div class="sezione">
 
-                        <img src="" alt="">
+                        <figure>
+                            <img src="../../assets/img/sushi-3.png" alt="">
+                        </figure>
 
                         <h4>{{ freshProduceEveryday[0].titolo }}</h4>
                         <p>{{ freshProduceEveryday[0].paragrafo }}</p>
                         <button class="button-white">{{ freshProduceEveryday[0].bottone }}</button>
                     </div>
-                </div>  
+                </div>
+
             </div>
         </div>
     </main>
@@ -132,7 +140,6 @@
                 margin: 0 auto;
                 margin-top: 50px;
 
-
                 img{
                     width: 100%;
                 }
@@ -142,13 +149,8 @@
     }
 
     main{
-        .informazione{
-            
-        }
-
         .sezione{
-            width: 350px;
-            background-color: blue;
+            width: 325px;
         }
     }
 
