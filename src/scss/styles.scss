@@ -1,2 +1,56 @@
+// variables
+@use './partials/variables' as *;
+
+// bootstrap
 @import "bootstrap/scss/bootstrap";
 
+body{
+    background-color: $bg-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: $h1-font-size;
+}
+
+h5{
+    font-size: $h5-font-size;
+}
+
+
+
+p{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+}
+
+.button-black{
+    background-color: $bg-color;
+    padding: $padding;
+    color: $color;
+    border: $border;
+    font-size: $font-size;
+    width: $width;
+    margin: $center;
+    text-transform: uppercase;
+}
+
+// .button-white{
+//     background-color: $bg-color;
+//     padding: $padding;
+//     color: $color;
+//     border: $border;
+//     font-size: $font-size;
+//     width: $width;
+//     margin: $center;
+//     text-transform: uppercase;
+// }

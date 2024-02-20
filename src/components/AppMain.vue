@@ -129,7 +129,7 @@
         }
 
         .imgHeader{
-            // background-color: red;
+            // // background-color: red;
             width: 50%;
             height: 95vh;
             margin: 0;

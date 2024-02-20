@@ -19,6 +19,6 @@
 
 <!-- ----------------------------------------------------------------------------- -->
 
-<style scoped>
-
+<style lang="scss" scoped>
+    @use './scss/styles.scss';
 </style>
