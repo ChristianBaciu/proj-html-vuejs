@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: "AppMain.vue",
+        name: "UniversalExperience.vue",
         data(){
             return{
                 TheBestTableInTown:[
@@ -112,10 +112,6 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <style lang="scss" scoped>
-    ul{
-        list-style-type: none;
-    }
-
     header{
 
         .universalExperience{
@@ -153,7 +149,5 @@
             width: 325px;
         }
     }
-
-
 </style>
 

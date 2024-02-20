@@ -18,10 +18,15 @@
 
         <div class="textBestInTown">
             <div class="bestTable mx-auto text-light">
-                <div class="barra pe-5">
-                    <span></span>
+
+
+
+                <div class="separatore d-flex align-items-center">
+                    <div class="barra"></div>
                     <h5>fine dining experience</h5>
                 </div>    
+
+
 
                 <div class="info">
                     <h2>the best table in town</h2>
@@ -56,20 +61,9 @@
                     padding-left: 47px;
                 }
 
-                .barra{
-                    display: flex;
-                    align-items: center;
-
-                    span{
-                        background-color: white;
-                        width: 40px;
-                        height: 1px;
-                        margin-right: 20px;
-                    }
-
-                    h5{
-                        margin: 0;
-                    }
+                h5{
+                    margin: 0;
+                    margin-left: 20px;
                 }
             }
         }

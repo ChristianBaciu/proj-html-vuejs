@@ -52,16 +52,15 @@
             </div>
 
             <div class="dining mx-auto text-light">
-                <div class="barra pe-5">
-                    <span></span>
-                    <h5>the best table in town</h5>
+
+                <div class="separatore d-flex align-items-center">
+                    <div class="barra"></div>
+                    <h5>fine dining experience</h5>
                 </div>    
 
                 <div class="info">
                     <h1>fine dining experience</h1>
-                    <br>
-                    <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
-                    <br>
+                    <p class="my-5">Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
                     <button class="button-black">explore the menu</button>
                 </div>
             </div>
@@ -87,7 +86,7 @@
         .textExperience{
             background-color: black;
             width: 47%;
-            height: 95vh;
+            height: 100vh;
 
             .dining{
                 width: 400px;
@@ -99,20 +98,9 @@
                     padding-left: 47px;
                 }
 
-                .barra{
-                    display: flex;
-                    align-items: center;
-
-                    span{
-                        background-color: white;
-                        width: 40px;
-                        height: 1px;
-                        margin-right: 20px;
-                    }
-
-                    h5{
-                        margin: 0;
-                    }
+                h5{
+                    margin: 0;
+                    margin-left: 20px;
                 }
             }
         }
@@ -123,7 +111,7 @@
             background-size: cover;
             background-position: center;
             width: 53%;
-            height: 95vh;
+            height: 100vh;
             margin: 0;
 
             ul{
