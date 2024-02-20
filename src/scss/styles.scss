@@ -16,15 +16,36 @@ h5,
 h6{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 h1{
     font-size: $h1-font-size;
 }
 
+h2{
+    font-size: $h2-font-size;
+}
+
+h3{
+    font-size: $h3-font-size;
+}
+
+h4{
+    font-size: $h4-font-size;
+}
+
 h5{
     font-size: $h5-font-size;
 }
+
+h6{
+    font-size: $h6-font-size;
+}
+
+
+
+
 
 p{
     font-family: 'Playfair Display', sans-serif;
@@ -40,15 +61,28 @@ p{
     width: $width;
     margin: $center;
     text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+
+    &:hover{
+        background-color: white;
+        color: black;
+        transition: all 0.5s ease 0s;
+    }
+
 }
 
-// .button-white{
-//     background-color: $bg-color;
-//     padding: $padding;
-//     color: $color;
-//     border: $border;
-//     font-size: $font-size;
-//     width: $width;
-//     margin: $center;
-//     text-transform: uppercase;
-// }
+.button-white{
+    background-color: $bg-color-white;
+    padding: $padding-white;
+    border: $border-white;
+    font-size: $font-size-white;
+    width: $width-white;
+    margin: $center-white;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+
+    &:hover{
+        transition: all 0.5s ease 0s;
+        border: 1px solid black;
+    }
+}

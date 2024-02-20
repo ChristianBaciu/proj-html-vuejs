@@ -1,17 +1,17 @@
-$bg-body: rgb(130, 130, 130);
+$bg-body: rgb(240, 240, 240);
 
 
 // h1
 $h1-font-size: 60px;
 
 // h2
-$h2-font-size: 50px;
+$h2-font-size: 45px;
 
 // h3
-$h3-font-size: 40px;
+$h3-font-size: 30px;
 
 // h4
-$h4-font-size: 20px;
+$h4-font-size: 23px;
 
 // h5
 $h5-font-size: 15px;
@@ -31,11 +31,10 @@ $center: margin 0 auto;
 
 
 
-// // button-white
-// $bg-color-white: rgba(255, 255, 255, 0.5);
-// $padding-white: 12px;
-// $color-white: white;
-// $border-white: 1px solid white;
-// $font-size-white: 12px;
-// $width-white: 175px;
-// $center-white: margin 0 auto; 
+// button-white
+$bg-color-white: rgba(255, 255, 255, 0);
+$padding-white: 12px;
+$border-white: 1px solid rgb(130, 130, 130);
+$font-size-white: 12px;
+$width-white: 175px;
+$center-white: margin 0 auto; 
