@@ -35,7 +35,7 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-    <header class="d-flex justify-content-between">
+    <header class="d-flex justify-content-between mt-4">
         <div class="universalExperience">
 
             <div class="info mx-auto">
@@ -53,20 +53,17 @@
         </div>
 
         <div class="imgSushi">
-
-            
             <figure class="imgCaliforniaRolls">
                 <!-- <img src="../../assets/img/info22x.jpg" alt=""> -->
                 <div>
                     <h5>california rolls - $22</h5>
                 </div>
             </figure>
-
         </div>
     </header>
 
     <main>
-        <div class="p-5 d-flex justify-content-center ">
+        <div class="p-5 d-flex justify-content-center">
             <div class="row text-center">
                 
                 <div class="col-4">
@@ -108,7 +105,7 @@
         </div>
 
 
-        <div class="TheBestTableInTown d-flex justify-content-between">
+        <div class="TheBestTableInTown d-flex justify-content-between mt-4">
 
             <div class="imgBestInTown">
             <!-- <img src="../../assets/img/slider32x.jpg" alt=""> -->
@@ -142,7 +139,7 @@ header{
 
     .universalExperience{
         width: 50%;
-        height: 95vh;
+        height: 90vh;
 
         .info{
             width: 500px;
@@ -153,7 +150,7 @@ header{
 
     .imgSushi{
         width: 50%;
-        height: 95vh;
+        height: 90vh;
         margin: 0;
 
         .imgCaliforniaRolls{

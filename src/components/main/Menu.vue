@@ -3,7 +3,89 @@
         name: "Menu.vue",
         data(){
             return{
-                
+                horsDOeuvres:[
+                    {
+                        menu: "hors d'oeuvre",
+                        piatti:[
+                            {
+                                nomeDelPiatto: 'ahi salmon nigiri',
+                                descrizione: 'Eget vulputate vitate quis retrum blandit sed. quam nulla sit lacinia.',
+                                prezzo: '$48'
+                            },
+                            {
+                                nomeDelPiatto: 'umi masu salad',
+                                descrizione: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+                                prezzo: '$21'
+                            },
+                            {
+                                nomeDelPiatto: 'temak wih crab',
+                                descrizione: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+                                prezzo: '$32'
+                            },
+                            {
+                                nomeDelPiatto: 'california rolls',
+                                descrizione: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+                                prezzo: '$22'
+                            }
+                        ]
+                    }
+                ],
+
+                mainCourse:[
+                    {
+                        menu: 'main course',
+                        piatti:[
+                            {
+                                nomeDelPiatto: 'braised abalone',
+                                descrizione: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+                                prezzo: '$52'
+                            },
+                            {
+                                nomeDelPiatto: 'twice cooked pork',
+                                descrizione: 'Ac vel, risus ornare senectus placerat duis amet dictumst tellus.',
+                                prezzo: '$21'
+                            },
+                            {
+                                nomeDelPiatto: 'temak wih crab',
+                                descrizione: 'Quis duis sit dictum aliquem a velit enim. Tellus in sit augue aliquam.',
+                                prezzo: '$32'
+                            },
+                            {
+                                nomeDelPiatto: 'california rolls',
+                                descrizione: 'Feugiat rhoncus ipsum tristique purus diam, et dolor molestie.',
+                                prezzo: '$48'
+                            }
+                        ]
+                    }
+                ],
+
+                dessert:[
+                    {
+                        menu: 'dessert',
+                        piatti:[
+                            {
+                                nomeDelPiatto: 'choccolate ball cake',
+                                descrizione: 'In pellentesque in felis massa vehicula. In sed euismod ut',
+                                prezzo: '$13'
+                            },
+                            {
+                                nomeDelPiatto: 'lime pie with crust',
+                                descrizione: 'Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.',
+                                prezzo: '$14'
+                            },
+                            {
+                                nomeDelPiatto: 'rasberry pear cake',
+                                descrizione: 'Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit.',
+                                prezzo: '$18'
+                            },
+                            {
+                                nomeDelPiatto: 'café au lait',
+                                descrizione: 'Eget vulputate vitae quis rutrum blandit sed. Quam nulla sit.',
+                                prezzo: '$6'
+                            }
+                        ]
+                    }
+                ]
             }
         }
     }
@@ -18,13 +100,13 @@
             <div class="horsDOeuvres bg-primary">
                 <div class="info text-light mx-auto p-5">
 
-                    <h3>menu</h3>
+                    <h3>{{ horsDOeuvres[0].menu }}</h3>
 
                     <div class="d-flex justify-content-between bg-danger my-3">
                         <h4>nomepiatto</h4>
                         <div>prezzo</div>
                     </div>
-                    <p>descrizione piatto</p>
+                    <p class="bg-danger">descrizione piatto</p>
 
                     <!-- <div class="d-flex justify-content-between bg-danger my-3">
                         <h4>nomepiatto</h4>
