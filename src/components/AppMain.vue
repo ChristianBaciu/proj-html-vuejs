@@ -4,6 +4,7 @@
     import LatestNews from './main/LatestNews.vue'
 
     export default{
+        name: "AppMain.vue",
         components:{
             UniversalExperience,
             AppCritics,

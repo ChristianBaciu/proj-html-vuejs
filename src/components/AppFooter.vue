@@ -1,22 +1,38 @@
 <script>
+    // import Social from './footer/Social.vue'
+
     export default{
         name: "AppFooter.vue",
+        // components:{
+        //     Social
+        // },
         data(){
             return{
-                Img:[
+                facebook:[
                     {
-                        avada: 'img di Avada',
-
-                        social:{
-                            facebook: '<i class="fa-brands fa-facebook-f"></i>',
-                            twitter: '<i class="fa-brands fa-x-twitter"></i>',
-                            youtube: '<i class="fa-brands fa-youtube"></i>',
-                            instagram: '<i class="fa-brands fa-instagram"></i>',
-                            linkedin: '<i class="fa-brands fa-linkedin-in"></i>'
-
-                        },
-                    },
+                        facebook:'<i class="fa-brands fa-facebook-f"></i>'
+                    }
                 ],
+                twitter:[
+                    {
+                        twitter:'<i class="fa-brands fa-x-twitter"></i>'
+                    }
+                ],
+                youtube:[
+                    {
+                        youtube:'<i class="fa-brands fa-youtube"></i>'
+                    }
+                ],
+                instagram:[
+                    {
+                        instagram:'<i class="fa-brands fa-instagram"></i>'
+                    }
+                ],
+                linkedin:[
+                    {
+                        linkedin:'<i class="fa-brands fa-linkedin-in"></i>'
+                    }
+                ]
             }
         }
     }
@@ -25,6 +41,8 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
+
+
     <header>
         <figure class="imgKunPaoChicken">
             <!-- <img src="../assets/img/slider52x.jpg" alt=""> -->
@@ -36,13 +54,36 @@
                 <p>Quam eu proin sit massa condimentum. Volutpat non pulvinar <br> aliquet nune. Quam eu proin sit massa condimentum.</p>
 
 
+
+                <!-- <Social class="" v-for="(element, index) in social" :key="index" :propsSocial="element,social"/> -->
+
+
+                    <!-- 
+                    <div class="social d-flex gap-5 justify-content-center">
+
+                        <div>
+                            <div v-html="element"></div>
+                        </div>
+                    
+
+                    </div> -->
+
+                    <div class="social d-flex gap-5 justify-content-center">
+                        <div v-for="(element, index) in social" :key="index" v-html="element"></div>
+                    </div>
+
+
+                <!-- 
                 <div class="social d-flex gap-5 justify-content-center">
-                    <div>facebook</div>    <!-- <i class="fa-brands fa-facebook-f"></i> -->
-                    <div>twitter</div>    <!-- <i class="fa-brands fa-x-twitter"></i> -->
-                    <div>youtube</div>    <!-- <i class="fa-brands fa-youtube"></i> -->
-                    <div>instagram</div>    <!-- <i class="fa-brands fa-instagram"></i> -->
-                    <div>linkedin</div>    <!-- <i class="fa-brands fa-linkedin-in"></i> -->
+
+                    <div>facebook</div>   <i class="fa-brands fa-facebook-f"></i> 
+                    <div>twitter</div>   <i class="fa-brands fa-x-twitter"></i>
+                    <div>youtube</div>   <i class="fa-brands fa-youtube"></i>
+                    <div>instagram</div> <i class="fa-brands fa-instagram"></i>
+                    <div>linkedin</div>   <i class="fa-brands fa-linkedin-in"></i>
+
                 </div>
+                 -->
 
             </div>
         </figure>
@@ -59,18 +100,6 @@
 <style lang="scss" scoped>
 
 header{
-
-    .copyright{
-        background-color: black;
-
-        p{
-            color: #707070;
-
-            span{
-                color: white;
-            }
-        }
-    }
 
     .imgKunPaoChicken{
 
@@ -100,5 +129,18 @@ header{
             }
         }
     }
+
+    .copyright{
+        background-color: black;
+
+        p{
+            color: #707070;
+
+            span{
+                color: white;
+            }
+        }
+    }
+
 }
 </style>
