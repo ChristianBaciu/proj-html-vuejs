@@ -97,6 +97,17 @@
             </div>
         </div>
     </header>
+
+    <main>
+
+        <figure class="imgKunPaoChicken my-5">
+            <!-- <img src="../../assets/img/page52x.jpg" alt=""> -->
+            <div>
+                <h5>kung pao chicken - $32</h5>
+            </div>
+        </figure>
+
+    </main>
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
@@ -131,11 +142,11 @@ header{
 
         .GlobeAndMail, .TheGuardian{
             width: calc(50% - 20px);
-            height: 425px;
+            height: 480px;
         }
 
         .GlobeAndMail{
-            background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 65%), url('../../assets/img/info52x.jpg');
+            background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%), url('../../assets/img/info52x.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -148,9 +159,7 @@ header{
         }
 
         .TheGuardian{
-            background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 65%), url('../../assets/img/info12x.jpg');
-            background-repeat: no-repeat;
-
+            background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%), url('../../assets/img/info12x.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -159,6 +168,27 @@ header{
                 width: 350px;
                 margin-top: 80px;
             }
+        }
+    }
+}
+
+main{
+
+    .imgKunPaoChicken{
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('../../assets/img/page52x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+        div{
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
         }
     }
 }

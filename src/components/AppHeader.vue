@@ -46,14 +46,14 @@
 
 <template>
     <header class="d-flex justify-content-between">
-        <div class="textExperience">
+        <div class="textFineDiningExperience">
             <div class="titleLogo">
                 <img class="ms-5" src="../assets/img/logo-restaurant-2x-600x115.png" width="250" alt="">
             </div>
 
-            <div class="dining mx-auto text-light">
+            <div class="fineDining mx-auto text-light">
 
-                <div class="separatore d-flex align-items-center">
+                <div class="d-flex align-items-center">
                     <div class="barra"></div>
                     <h5>fine dining experience</h5>
                 </div>    
@@ -83,12 +83,12 @@
 <style lang="scss" scoped>
     header{
 
-        .textExperience{
+        .textFineDiningExperience{
             background-color: black;
             width: 47%;
             height: 100vh;
 
-            .dining{
+            .fineDining{
                 width: 400px;
                 margin-top: 100px;
 
@@ -113,6 +113,13 @@
             width: 53%;
             height: 100vh;
             margin: 0;
+
+            &:hover{
+                transition: all 0.5s ease 0s;
+                background-color: black;
+                color: white;
+            }
+
 
             ul{
                 list-style-type: none;

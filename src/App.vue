@@ -1,15 +1,15 @@
 <script>
     import AppHeader from './components/AppHeader.vue'
     import UniversalExperience from './components/main/UniversalExperience.vue'
-    import BestInTown from './components/main/BestInTown.vue'
     import AppCritics from './components/main/AppCritics.vue'
+    import LatestNews from './components/main/LatestNews.vue'
 
     export default{
         components:{
             AppHeader,
             UniversalExperience,
-            BestInTown,
-            AppCritics
+            AppCritics,
+            LatestNews,
         }
     }
 </script>
@@ -21,8 +21,9 @@
 
     <main>
         <UniversalExperience/>
-        <BestInTown/>
         <AppCritics/>
+
+        <LatestNews/>
     </main>
 
 </template>
