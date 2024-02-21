@@ -5,7 +5,7 @@
             return{
                 horsDOeuvres:[
                     {
-                        menu: "hors d'oeuvre",
+                        menu: "hors d'oeuvres",
                         piatti:[
                             {
                                 nomeDelPiatto: 'ahi salmon nigiri',
@@ -95,113 +95,51 @@
 
 <template>
     <header class="my-5 py-5">
-
         <div class="menu d-flex justify-content-center">
-            <div class="horsDOeuvres bg-primary">
-                <div class="info text-light mx-auto p-5">
+            
+            <div class="horsDOeuvres">
+                <h3 class="p-5">{{ horsDOeuvres[0].menu }}</h3><!-- nome menu -->
 
-                    <h3>{{ horsDOeuvres[0].menu }}</h3>
+                <div v-for="(element, index) in horsDOeuvres[0].piatti" :key="index"
+                class="info text-light mx-auto pb-4 px-5">
 
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
+                    <div class="d-flex justify-content-between text-dark">
+                        <h4>{{ element.nomeDelPiatto }}</h4>
+                        <div>{{ element.prezzo }}</div>
                     </div>
-                    <p class="bg-danger">descrizione piatto</p>
-
-                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p> -->
-
+                    <p class="text-dark">{{ element.descrizione }}</p>
                 </div>
             </div>
 
-            <div class="mainCourse bg-warning">
-                <!-- <img src="../../assets/img/misc22x.jpg" alt=""> -->
-                <div class="info text-light mx-auto  p-5">
+            <div class="mainCourse">
+                <h3 class="p-5 text-light">{{ mainCourse[0].menu }}</h3><!-- nome menu -->
 
-                    <h3>menu</h3>
+                <div v-for="(element, index) in mainCourse[0].piatti" :key="index"
+                class="info text-light mx-auto pb-4 px-5">
 
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
+                    <div class="d-flex justify-content-between text-light">
+                        <h4>{{ element.nomeDelPiatto }}</h4>
+                        <div>{{ element.prezzo }}</div>
                     </div>
-                    <p>descrizione piatto</p>
-
-                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p> -->
-
+                    <p>{{ element.descrizione }}</p>
                 </div>
             </div>
 
-            <div class="dessert bg-secondary">
+            <div class="dessert">
+                <h3 class="p-5">{{ dessert[0].menu }}</h3><!-- nome menu -->
 
-                <div class="info text-light mx-auto p-5">
+                <div v-for="(element, index) in dessert[0].piatti" :key="index"
+                class="info text-light mx-auto pb-4 px-5">
 
-                    <h3>menu</h3>
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
+                    <div class="d-flex justify-content-between text-dark">
+                        <h4>{{ element.nomeDelPiatto }}</h4>
+                        <div>{{ element.prezzo }}</div>
                     </div>
-                    <p>descrizione piatto</p>
-
-                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p>
-
-
-                    <div class="d-flex justify-content-between bg-danger my-3">
-                        <h4>nomepiatto</h4>
-                        <div>prezzo</div>
-                    </div>
-                    <p>descrizione piatto</p> -->
-
+                    <p class="text-dark">{{ element.descrizione }}</p>
                 </div>
             </div>
+
         </div>
-
-
-
-
     </header>
 
 
@@ -236,9 +174,14 @@ header{
         
         .horsDOeuvres, .mainCourse, .dessert{
             width: 450px;
+            background-color: #e8e8e8;
         }
     
         .mainCourse{
+            background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%), url('../../assets/img/misc22x.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             margin-top: -30px;
             margin-bottom: 30px;
         }
