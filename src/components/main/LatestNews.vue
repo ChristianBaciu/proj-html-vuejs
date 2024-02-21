@@ -15,6 +15,39 @@
         <p style="font-size: 30px;">Latest news E promotions</p>
     </div>
 
+    <div class="promotions mx-auto bg-primary">
+        <div class="d-flex">  <!-- justify-content-between -->
+
+            <div class="clo-4 bg-danger">
+                <figure>
+                    <!-- <img src="../../assets/img/blog92x.jpg" alt=""> -->
+                </figure>
+                <h1>ciao</h1>
+            </div>
+            <div class="clo-4 bg-warning">
+                <figure>
+                    <!-- <img src="../../assets/img/blog72x.jpg" alt=""> -->
+                </figure>
+                <h1>ciao</h1>
+            </div>
+            <div class="clo-4 bg-secondary">
+                <figure>
+                    <!-- <img src="../../assets/img/blog82x.jpg" alt=""> -->
+                </figure>
+                <h1>ciao</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <br><br>
     <br><br>
     <br><br>
@@ -25,9 +58,9 @@
 
     <div class="TheBestTableInTown d-flex justify-content-between">
 
-        <div class="imgBestInTown">
+        <figure class="imgBestInTown">
         <!-- <img src="../../assets/img/slider32x.jpg" alt=""> -->
-        </div>
+        </figure>
 
         <div class="textBestInTown">
             <div class="enjoyYour mx-auto text-light">
@@ -47,11 +80,29 @@
             </div>
         </div>
     </div>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
 
 <style lang="scss" scoped>
+
+.promotions{
+    width: 1000px;
+}
+
+
+
+
+
 .TheBestTableInTown{
 
     .textBestInTown{
