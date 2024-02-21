@@ -11,50 +11,40 @@
 
 <template>
     
-    <div class="text-center">
-        <p style="font-size: 30px;">Latest news E promotions</p>
+    <div class="text-center my-5">
+        <p style="font-size: 30px;">Latest news &#8455; promotions</p>
     </div>
 
-    <div class="promotions mx-auto bg-primary">
-        <div class="d-flex">  <!-- justify-content-between -->
+    <div class="promotions mx-auto">
+        <div class="d-flex justify-content-center text-center gap-4">
 
-            <div class="clo-4 bg-danger">
+            <div class="theBestCoffeInTown col-4">
                 <figure>
                     <!-- <img src="../../assets/img/blog92x.jpg" alt=""> -->
                 </figure>
-                <h1>ciao</h1>
+                <h4>the best coffee in town</h4>
+                <p>By admin<span class="mx-3">Published On: Jenuary 7th, 2020</span>Categories: News</p>
             </div>
-            <div class="clo-4 bg-warning">
+            
+            <div class="discoverOurNewMenu col-4">
                 <figure>
                     <!-- <img src="../../assets/img/blog72x.jpg" alt=""> -->
                 </figure>
-                <h1>ciao</h1>
+                <h4>discover our new menu</h4>
+                <p>By admin<span class="mx-3">Published On: Jenuary 7th, 2020</span>Categories: News</p>
             </div>
-            <div class="clo-4 bg-secondary">
+
+            <div class="weNowAcceptSquare col-4">
                 <figure>
                     <!-- <img src="../../assets/img/blog82x.jpg" alt=""> -->
                 </figure>
-                <h1>ciao</h1>
+                <h4>we now accept square!</h4>
+                <p>By admin<span class="mx-3">Published On: Jenuary 7th, 2020</span>Categories: News</p>
             </div>
 
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
 
     <div class="TheBestTableInTown d-flex justify-content-between">
 
@@ -81,14 +71,6 @@
         </div>
     </div>
 
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
@@ -96,14 +78,47 @@
 <style lang="scss" scoped>
 
 .promotions{
-    width: 1000px;
+    width: 1250px;
+
+    h4{
+        margin-top: 25px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .theBestCoffeInTown, .discoverOurNewMenu, .weNowAcceptSquare{
+        figure{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            margin: 0;
+        }
+    }
+
+    .theBestCoffeInTown{
+        figure{
+            background-image: url('../../assets/img/blog92x.jpg');
+        }
+    }
+
+    .discoverOurNewMenu{
+        figure{
+            background-image: url('../../assets/img/blog72x.jpg');
+        }
+    }
+
+    .weNowAcceptSquare{
+        figure{
+            background-image: url('../../assets/img/blog82x.jpg');
+        }
+    }
 }
 
-
-
-
-
 .TheBestTableInTown{
+    margin-top: 30px;
 
     .textBestInTown{
         background-color: black;
@@ -137,6 +152,5 @@
         margin: 0;
     }
 }
-
 </style>
 
