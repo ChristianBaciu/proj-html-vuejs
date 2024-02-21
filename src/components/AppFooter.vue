@@ -42,7 +42,7 @@
         </figure>
 
         <div class="copyright text-light p-3 text-center">
-            <p>&copy; Copyright 2012 - 2024 &VerticalSeparator; <span>Avada Website Builder</span> <span>by ThemeFusion</span> &VerticalSeparator; All Right Reserved &VerticalSeparator; Powered by <span>WordPress</span></p>
+            <p>&copy; Copyright 2012 - 2024 &VerticalSeparator; <span>Avada Website Builder</span> by <span>ThemeFusion</span> &VerticalSeparator; All Right Reserved &VerticalSeparator; Powered by <span>WordPress</span></p>
         </div>
     </header>
 </template>

@@ -2,7 +2,9 @@
     export default{
         name: "Menu.vue",
         data(){
-
+            return{
+                
+            }
         }
     }
 </script>
@@ -10,8 +12,119 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-    <header>
-        <figure class="imgKunPaoChicken">
+    <header class="my-5 py-5">
+
+        <div class="menu d-flex justify-content-center">
+            <div class="horsDOeuvres bg-primary">
+                <div class="info text-light mx-auto p-5">
+
+                    <h3>menu</h3>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p> -->
+
+                </div>
+            </div>
+
+            <div class="mainCourse bg-warning">
+                <!-- <img src="../../assets/img/misc22x.jpg" alt=""> -->
+                <div class="info text-light mx-auto  p-5">
+
+                    <h3>menu</h3>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p> -->
+
+                </div>
+            </div>
+
+            <div class="dessert bg-secondary">
+
+                <div class="info text-light mx-auto p-5">
+
+                    <h3>menu</h3>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <!-- <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p>
+
+
+                    <div class="d-flex justify-content-between bg-danger my-3">
+                        <h4>nomepiatto</h4>
+                        <div>prezzo</div>
+                    </div>
+                    <p>descrizione piatto</p> -->
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+
+    <main>
+        <figure>
             <!-- <img src="../../assets/img/hero42x.jpg" alt=""> -->
             <nav class="BraisedAbalone">
 
@@ -29,17 +142,32 @@
                 </div>
             </nav>
         </figure>
-    </header>
+    </main>
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
 
 <style lang="scss" scoped>
 header{
+    
+    .menu{
+        
+        .horsDOeuvres, .mainCourse, .dessert{
+            width: 450px;
+        }
+    
+        .mainCourse{
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+main{
 
     figure{
         position: relative;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('../../assets/img/hero42x.jpg');
+        background-image: url('../../assets/img/hero42x.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -48,8 +176,8 @@ header{
     }
 
     .BraisedAbalone{
-        background-color: black;
         position: absolute;
+        background-color: black;
         top: 50%;
         left: 20%;
         transform: translate(-50%, -50%);
