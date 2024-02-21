@@ -12,6 +12,8 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
+
+    <h1 class="bg-primary">1social1</h1>
     <!-- <header>
 
         <div class="social d-flex gap-5 justify-content-center">

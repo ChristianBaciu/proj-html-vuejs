@@ -1,34 +1,26 @@
 <script>
-    // import Social from './footer/Social.vue'
+    import Social from './footer/Social.vue'
 
     export default{
         name: "AppFooter.vue",
-        // components:{
-        //     Social
-        // },
+        components:{
+            Social
+        },
         data(){
             return{
-                facebook:[
+                social:[
                     {
                         facebook:'<i class="fa-brands fa-facebook-f"></i>'
-                    }
-                ],
-                twitter:[
+                    },
                     {
                         twitter:'<i class="fa-brands fa-x-twitter"></i>'
-                    }
-                ],
-                youtube:[
+                    },
                     {
                         youtube:'<i class="fa-brands fa-youtube"></i>'
-                    }
-                ],
-                instagram:[
+                    },
                     {
                         instagram:'<i class="fa-brands fa-instagram"></i>'
-                    }
-                ],
-                linkedin:[
+                    },
                     {
                         linkedin:'<i class="fa-brands fa-linkedin-in"></i>'
                     }
@@ -55,22 +47,20 @@
 
 
 
-                <!-- <Social class="" v-for="(element, index) in social" :key="index" :propsSocial="element,social"/> -->
+                <Social/>
 
 
-                    <!-- 
+                
                     <div class="social d-flex gap-5 justify-content-center">
+                        <div v-for="(element, index) in social" :key="index" v-html="element[Object.keys(element)[0]]"></div>      
 
-                        <div>
-                            <div v-html="element"></div>
-                        </div>
-                    
-
-                    </div> -->
-
-                    <div class="social d-flex gap-5 justify-content-center">
-                        <div v-for="(element, index) in social" :key="index" v-html="element"></div>
                     </div>
+
+
+            </div>
+
+
+
 
 
                 <!-- 
@@ -85,7 +75,6 @@
                 </div>
                  -->
 
-            </div>
         </figure>
 
         <div class="copyright text-light p-3 text-center">
@@ -123,7 +112,8 @@ header{
         .social{
 
             div{
-                background-color: red;
+                background-color: white;
+                color: black;
                 border-radius: 50%;
                 padding: 12px;
             }
