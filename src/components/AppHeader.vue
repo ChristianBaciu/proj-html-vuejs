@@ -6,35 +6,35 @@
                 headerAvada:[
                     {
                         nome: 'Home',
-                        // true
+                        select: true
                     },
                     {
                         nome: 'Culinary History',
-                        // false
+                        select: false
                     },
                     {
                         nome: 'Our Team',
-                        // false
+                        select: false
                     },
                     {
                         nome: 'Our Menu',
-                        // false
+                        select: false
                     },
                     {
                         nome: 'Takeout',
-                        // false
+                        select: false
                     },
                     {
                         nome: 'Bulletin',
-                        // false
+                        select: false
                     },
                     {
                         nome: 'Reservations',
-                        // false
+                        select: false
                     },
                     {
-                        nome: '<i class="fa-solid fa-cart-shopping"></i>'
-                        // false
+                        nome: '<i class="fa-solid fa-cart-shopping"></i>',
+                        select: false
                     }
                 ]
             }
@@ -68,7 +68,10 @@
 
         <div class="imgHeader">
             <ul class="titleLogo d-flex gap-4 justify-content-center p-4 my-1 text-light">
-                <li v-for="(element, index) in headerAvada" :key="index">
+                <li class="vociMenu"
+                    :class="element.select ? 'active' : '' "    
+                    v-for="(element, index) in headerAvada" :key="index">
+
                     <span v-if="element.nome.includes('<i')" v-html="element.nome"></span>
                     <span v-else>{{ element.nome }}</span>
                 </li>
@@ -82,6 +85,19 @@
 
 <style lang="scss" scoped>
     header{
+
+        .vociMenu{
+            color: rgb(203, 203, 203);
+
+            &:hover{
+                color: white;
+            }
+        }
+
+        .active{
+            color: white;
+            font-weight: bold;
+        }
 
         .textFineDiningExperience{
             background-color: black;
