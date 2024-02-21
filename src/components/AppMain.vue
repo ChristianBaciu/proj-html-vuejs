@@ -1,13 +1,13 @@
 <script>
-    import AppHeader from './components/AppHeader.vue'
-    import AppMain from './components/AppMain.vue'
-    import AppFooter from './components/AppFooter.vue'
+    import UniversalExperience from './main/UniversalExperience.vue'
+    import AppCritics from './main/Critics.vue'
+    import LatestNews from './main/LatestNews.vue'
 
     export default{
         components:{
-            AppHeader,
-            AppMain,
-            AppFooter
+            UniversalExperience,
+            AppCritics,
+            LatestNews,
         }
     }
 </script>
@@ -15,15 +15,13 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-    <AppHeader/>
-
-    <AppMain/>
-
-    <AppFooter/>
+    <UniversalExperience/>
+    <AppCritics/>
+    <LatestNews/>
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
 
 <style lang="scss" scoped>
-    @use './scss/styles.scss';
+
 </style>

@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: "AppCritics.vue",
+        name: "Critics.vue",
         data(){
             return{
                 NewYorkTimes:[
