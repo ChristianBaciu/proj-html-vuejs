@@ -1,10 +1,8 @@
 <script>
     export default{
         name: "Social.vue",
-        data(){
-            // props:{
-            //     propsSocial: Strings,
-            // }
+        props:{
+            propsSocial: 'Array'
         }
     }
 </script>
@@ -12,32 +10,9 @@
 <!-- ----------------------------------------------------------------------------- -->
 
 <template>
-
-    <h1 class="bg-primary">1social1</h1>
-    <!-- <header>
-
-        <div class="social d-flex gap-5 justify-content-center">
-
-            <div>
-                <div v-html="element"></div>
-            </div>
-        
-
-        </div>
-
-
-        <div class="social d-flex gap-5 justify-content-center">
-
-            <div>facebook</div>   <i class="fa-brands fa-facebook-f"></i> 
-            <div>twitter</div>   <i class="fa-brands fa-x-twitter"></i>
-            <div>youtube</div>   <i class="fa-brands fa-youtube"></i>
-            <div>instagram</div> <i class="fa-brands fa-instagram"></i>
-            <div>linkedin</div>   <i class="fa-brands fa-linkedin-in"></i>
-
-        </div>
-
-    </header> -->
-
+    <div class="social d-flex gap-3 justify-content-center">
+        <div v-for="(icon, index) in propsSocial" :key="index" v-html="icon"></div>
+    </div>
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
@@ -48,9 +23,21 @@ header{
     .social{
 
         div{
-            background-color: red;
+            background-color: white;
+            color: black;
             border-radius: 50%;
             padding: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            transition: all 0.5s ease 0s;
+            width: 50px;
+            height: 50px;
+
+            &:hover{
+                transition: all 0.5s ease 0s;
+                background-color: black;
+                color: white;
+            }
         }
     }
 }

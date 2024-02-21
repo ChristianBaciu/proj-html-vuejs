@@ -2,6 +2,7 @@
     import UniversalExperience from './main/UniversalExperience.vue'
     import AppCritics from './main/Critics.vue'
     import LatestNews from './main/LatestNews.vue'
+    import Menu from './main/Menu.vue'
 
     export default{
         name: "AppMain.vue",
@@ -9,6 +10,7 @@
             UniversalExperience,
             AppCritics,
             LatestNews,
+            Menu,
         }
     }
 </script>
@@ -19,6 +21,7 @@
     <UniversalExperience/>
     <AppCritics/>
     <LatestNews/>
+    <Menu/>
 </template>
 
 <!-- ----------------------------------------------------------------------------- -->
