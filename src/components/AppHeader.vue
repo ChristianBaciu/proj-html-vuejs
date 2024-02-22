@@ -1,6 +1,11 @@
 <script>
+    import ButtonOptions from '../components/header/ButtonOptions.vue'
+
     export default{
         name: "AppHeader.vue",
+        components:{
+            ButtonOptions,
+        },
         data(){
             return{
                 headerAvada:[
@@ -76,6 +81,10 @@
                     <span v-else>{{ element.nome }}</span>
                 </li>
             </ul>
+
+            <!-- componente bottone Prebuilts e Buy Now -->
+            <ButtonOptions/>
+
             <!-- <img src="../assets/img/slider52x.jpg" alt=""> -->
         </div>
     </header>
@@ -129,13 +138,6 @@
             width: 53%;
             height: 100vh;
             margin: 0;
-
-            &:hover{
-                transition: all 0.5s ease 0s;
-                background-color: black;
-                color: white;
-            }
-
 
             ul{
                 list-style-type: none;
